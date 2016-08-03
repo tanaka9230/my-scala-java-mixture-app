@@ -29,7 +29,7 @@
                 <version>3.2.1</version>
                 <executions>
                     <execution>
-                        <id>scala-compile-first</id>
+                        <id>scala-compile</id>
                         <phase>process-resources</phase>
                         <goals>
                             <goal>add-source</goal>
@@ -37,21 +37,10 @@
                         </goals>
                     </execution>
                     <execution>
-                        <id>scala-test-compile</id>
+                        <id>scala-testCompile</id>
                         <phase>process-test-resources</phase>
                         <goals>
                             <goal>testCompile</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>compile</goal>
                         </goals>
                     </execution>
                 </executions>
